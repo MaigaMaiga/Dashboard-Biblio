@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatSliderModule } from '@angular/material/slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AjouterlivreComponent } from './ajouterlivre/ajouterlivre.component';
@@ -10,6 +10,9 @@ import { GestionLivreComponent } from './gestion-livre/gestion-livre.component';
 import { GestionLibrarieComponent } from './gestion-librarie/gestion-librarie.component';
 import { GestionCategorieComponent } from './gestion-categorie/gestion-categorie.component';
 import { GestionDomaineComponent } from './gestion-domaine/gestion-domaine.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,20 @@ import { GestionDomaineComponent } from './gestion-domaine/gestion-domaine.compo
     GestionLivreComponent,
     GestionLibrarieComponent,
     GestionCategorieComponent,
-    GestionDomaineComponent
+    
+    
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    
+    
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
